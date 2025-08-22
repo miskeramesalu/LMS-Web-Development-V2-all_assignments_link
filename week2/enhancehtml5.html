@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header, main, footer {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced HTML5</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About </h2>
+    <p>This is a simple demonstration of an enhanced HTML5 form. It includes semantic layout, tables, lists, images, and an accessible form with proper validation.</p>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="Placeholder Banner" style="width: 30%;">
+      <figcaption>Figure 1: HTML5 LOGO</figcaption>
+    </figure>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video controls width="400">
+     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <section>
+    <h2>Data Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Type</th>
+          <th>Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>Interpreted</td>
+          <td>AI, ML, Web Dev</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Interpreted</td>
+          <td>Web Frontend</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Compiled</td>
+          <td>Android, Enterprise</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="form">
+    <h2>User Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="miskera22@gmail.com" required autocomplete="email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Kenya">Kenya</option>
+        <option value="USA">USA</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." required></textarea>
+
+      <label for="readonlyinfo">Referral Code (Read Only):</label>
+      <input type="text" id="readonlyinfo" value="XYZ12345" readonly>
+
+      <label>
+        <input type="checkbox" name="subscribe" checked>
+        Subscribe to newsletter
+      </label>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Enhanced Form. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

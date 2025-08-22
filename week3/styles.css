@@ -1,0 +1,60 @@
+/* Universal selector */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+/* Element selector */
+h1 {
+  color: navy;
+  text-align: center;
+}
+
+/* Paragraph selector */
+p {
+  font-size: 18px;
+  color: red;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* ID selector */
+#heading-one {
+  font-size: 30px;
+  color: chartreuse;
+}
+
+/* Class selector */
+.text-highlight {
+  background-color: yellow;
+  padding: 10px;       /* Padding: inside space */
+  border: 2px solid black; /* Border */
+  margin: 10px 0;      /* Margin: outside space */
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Pseudo-class */
+a:hover {
+  color: orange;
+}
+
+/* Pseudo-element */
+h1::after {
+  content: " ✨";
+}
+
+/* Body styling */
+body {
+  background-color: #f0f8ff;
+}

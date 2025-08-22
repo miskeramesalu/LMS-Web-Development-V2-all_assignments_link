@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS General Rules</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Override some styles from external CSS */
+    body {
+      background-color: lavender; /* Different from external CSS */
+    }
+
+    h1 {
+      color: darkblue; /* Internal override */
+    }
+
+    .text-highlight {
+      background-color: lightgreen; /* Different highlight color */
+    }
+
+    p {
+      color: maroon; /* Different paragraph color */
+    }
+
+    a[target="_blank"] {
+      color: darkred;
+    }
+
+    a:hover {
+      color: teal;
+    }
+  </style>
+</head>
+<body style="border: 5px solid purple; padding: 15px;"> <!-- Inline CSS -->
+
+  <!-- Header Section -->
+  <h1 id="heading-one" style="background-color: blue; padding: 5px;">CSS General Rules</h1>
+  <p class="text-highlight" style="border: 3px dashed blue;">This paragraph uses a class selector and shows the box model (padding, border, margin).</p>
+  <p style="color: navy; background-color: pink;">CSS makes HTML look better and more readable.</p>
+  <a href="#contact-section" target="_blank" style="background-color: lightseagreen; padding: 5px;">Jump to Contact Section</a>
+
+  <!-- Contact Section -->
+  <h1 id="contact-section" style="color: darkmagenta;">Contact Us</h1>
+  <p class="text-highlight" style="background-color: orange;">If you have any questions, feel free to reach out!</p>
+  <p class="text-highlight" style="background-color: lightcoral;">Email: miskera22@gmail.com</p>
+  <p class="text-highlight" style="background-color: green;">Phone: +251908321303</p>
+
+</body>
+</html>
