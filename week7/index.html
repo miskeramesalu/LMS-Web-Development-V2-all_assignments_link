@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTech Kids - Interactive Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AfriTech Kids</h1>
+                <p>Empowering young African minds through technology</p>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#signup" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p>Learn, Create, Innovate</p>
+                    <p>Join thousands of African kids learning coding, robotics, and digital skills in a fun, supportive environment.</p>
+                    <button class="cta-button" id="hero-cta">Start Learning Today</button>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-placeholder">
+                        <div class="floating-icon" id="floating-icon-1">💻</div>
+                        <div class="floating-icon" id="floating-icon-2">🤖</div>
+                        <div class="floating-icon" id="floating-icon-3">🌐</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-icon">📱</div>
+                        <h3>Mobile App Development</h3>
+                        <p>Build your first mobile app using African-inspired designs</p>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🤖</div>
+                        <h3>Robotics & AI</h3>
+                        <p>Create robots that solve real African challenges</p>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🌐</div>
+                        <h3>Web Design</h3>
+                        <p>Design beautiful websites with African patterns and colors</p>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-icon">🎮</div>
+                        <h3>Game Development</h3>
+                        <p>Create games inspired by African stories and folklore</p>
+                        <button class="course-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup">
+            <div class="container">
+                <h2>Join Our Learning Community</h2>
+                <p>Create an account to access free courses and connect with other young innovators across Africa.</p>
+                
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name">
+                        <div class="error" id="name-error">Please enter your name (min 2 characters)</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Enter your age" min="5" max="18">
+                        <div class="error" id="age-error">Please enter a valid age (5-18)</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="">Select your country</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="south-africa">South Africa</option>
+                            <option value="egypt">Egypt</option>
+                            <option value="other">Other African Country</option>
+                        </select>
+                        <div class="error" id="country-error">Please select your country</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Parent's Email</label>
+                        <input type="email" id="email" placeholder="Enter parent's email address">
+                        <div class="error" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest</label>
+                        <div class="interests">
+                            <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                            <label><input type="checkbox" name="interests" value="robotics"> Robotics</label>
+                            <label><input type="checkbox" name="interests" value="design"> Design</label>
+                            <label><input type="checkbox" name="interests" value="games"> Game Development</label>
+                        </div>
+                        <div class="error" id="interests-error">Please select at least one interest</div>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Create Account</button>
+                    <div class="success-message" id="form-success">Account created successfully! Welcome to AfriTech Kids!</div>
+                </form>
+            </div>
+        </section>
+
+        <section class="interactive">
+            <div class="container">
+                <h2>Interactive Learning Zone</h2>
+                <div class="interactive-content">
+                    <div class="code-playground">
+                        <h3>Try Our Code Playground</h3>
+                        <div class="editor">
+                            <div class="editor-header">HTML Editor</div>
+                            <textarea id="html-editor" placeholder="Write your HTML code here..."></textarea>
+                            <button id="run-code">Run Code</button>
+                        </div>
+                        <div class="preview">
+                            <div class="preview-header">Live Preview</div>
+                            <iframe id="preview-frame"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-system">
+                        <h3>Earn African Tech Badges</h3>
+                        <div class="badges">
+                            <div class="badge" data-badge="coder">
+                                <div class="badge-icon">💻</div>
+                                <p>First Code</p>
+                            </div>
+                            <div class="badge" data-badge="innovator">
+                                <div class="badge-icon">✨</div>
+                                <p>Creative Innovator</p>
+                            </div>
+                            <div class="badge" data-badge="problem-solver">
+                                <div class="badge-icon">🔍</div>
+                                <p>Problem Solver</p>
+                            </div>
+                        </div>
+                        <button id="earn-badge">Earn Your First Badge</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AfriTech Kids</h3>
+                    <p>Inspiring the next generation of African technology leaders</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>info@afritechkids.com</p>
+                    <p>+251908321303</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AfriTech Kids. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
